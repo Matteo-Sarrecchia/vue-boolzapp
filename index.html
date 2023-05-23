@@ -64,13 +64,11 @@
                 </div>
 
                 <!-- contatti -->
-                <div class="contatti" v-for="(img, index) in contacts">
-                    <img :src="contacts[index].avatar" alt="foto profilo">
+                <div class="contatti" v-for="(elm, index) in contacts">
+                    <img :src="contacts[positionItem].avatar" alt="foto profilo">
                     <div>
-                        <div>{{contacts[index].name}}</div>
+                        <div>{{contacts[positionItem].name}}</div>
                     </div>
-                    
-
                 </div>
             </div>
 
@@ -79,8 +77,8 @@
                 <div id="head-dx">
                     <!-- dati profilo -->
                     <div class="head-col-sx">
-                        <img src="" alt="foto">
-                        <div>nome profilo</div>
+                        <img :src="" alt="foto">
+                        <div></div>
                     </div>
 
                     <!-- link header -->
@@ -101,11 +99,15 @@
                 <div class="main-text">
 
                     <div class="send">
-                        <div class="text-send"></div>
+                        <div class="text-send" v-for="(elm, index) in contacts[positionItem].messages">
+                            {{elm.message}}
+                        </div>
                     </div>
 
                     <div class="receive">
-                        <div class="text-receive"></div>
+                        <div class="text-receive" v-for="(elm, index) in contacts[positionItem].messages">
+                            {{elm.message}}
+                        </div>
                     </div>
 
                 </div>
