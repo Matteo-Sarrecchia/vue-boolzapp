@@ -3,9 +3,9 @@ const {createApp} = Vue;
 createApp ({
     data (){
         return {
-
             sendMessage: "",
             positionItem: 0,
+            status: "",
             
             user:  {
                     name: 'Matteo',
@@ -181,10 +181,13 @@ createApp ({
         }
     },
     methods: {
-        createchat(){
-            
+        // createchat(){
+        //    console.log(this.contacts[this.positionItem].messages[this.positionItem].status) 
+        // },
+        clickThumb: function(index){
+            this.positionItem = index;
+            console.log(this.contacts)
         }
-        
     }
 }).mount("#app")
 

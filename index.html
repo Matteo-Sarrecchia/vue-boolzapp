@@ -64,10 +64,10 @@
                 </div>
 
                 <!-- contatti -->
-                <div class="contatti" v-for="(elm, index) in contacts">
-                    <img :src="contacts[positionItem].avatar" alt="foto profilo">
+                <div class="contatti" v-for="(elm, index) in contacts" @click="clickThumb">
+                    <img :src="contacts[index].avatar" alt="foto profilo">
                     <div>
-                        <div>{{contacts[positionItem].name}}</div>
+                        {{contacts[index].name}}
                     </div>
                 </div>
             </div>
@@ -77,8 +77,10 @@
                 <div id="head-dx">
                     <!-- dati profilo -->
                     <div class="head-col-sx">
-                        <img :src="" alt="foto">
-                        <div></div>
+                        <img :src="contacts[positionItem].avatar" alt="foto">
+                        <div>
+                            {{contacts[positionItem].name}}
+                        </div>
                     </div>
 
                     <!-- link header -->
@@ -97,19 +99,9 @@
 
                 <!-- corpo principale testo -->
                 <div class="main-text">
-
-                    <div class="send">
-                        <div class="text-send" v-for="(elm, index) in contacts[positionItem].messages">
+                        <div class="text" v-for="(elm, index) in contacts[positionItem].messages" :class="elm.status === 'sent' ? 'text-send' : 'text-receive'">
                             {{elm.message}}
                         </div>
-                    </div>
-
-                    <div class="receive">
-                        <div class="text-receive" v-for="(elm, index) in contacts[positionItem].messages">
-                            {{elm.message}}
-                        </div>
-                    </div>
-
                 </div>
 
                 <!-- footer -->

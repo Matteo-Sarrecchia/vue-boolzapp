@@ -182,30 +182,28 @@ align-items: center;
     overflow: auto;
 }
 
-.main-text .send, .main-text .receive{
-    min-height: 70px;
+.text{
+    height: 50px;
+    border: 1px solid black;
 }
 
-.main-text .send{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-.main-text .send .text-send, .main-text .receive .text-receive{
+.text-send, .text-receive{
     width: 45%;
     min-height: 50px;
     margin: 10px;
     border: 1px solid black;
     border-radius: 15px;
     padding: 10px;
+    min-height: 50px;
 }
 
-.main-text .send .text-send{
+.text-send{
     background-color: rgb(59, 194, 59);
+    margin-left: 300px;
+    text-align: end;
 }
 
-.main-text .receive .text-receive{
+.text-receive{
     background-color: lightskyblue;
 }
 
