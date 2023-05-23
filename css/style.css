@@ -44,17 +44,33 @@ body{
     display: flex;
 }
 
+#head-sx .head-col-sx{
+    display: flex;
+    align-items: center;
+}
+
 .head-col-sx, .head-col-dx{
     width: 50%;
-    height: 100%;
+    height: 50px;
     background-color: lightgrey;
-    border: 1px solid black;
 }
 
 #head-sx .head-col-dx{
     display: flex;
     align-items: center;
     justify-content: end;
+}
+
+#head-sx .head-col-sx img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#head-sx .head-col-sx div{
+    margin-left: 10px;
 }
 
 #head-sx .head-col-dx a{
@@ -64,6 +80,20 @@ body{
 }
 
 /* notifiche */
+#notifiche{
+    background-color: #1dbfd9;
+    display: flex;
+    align-items: center;
+}
+
+#notifiche > a{
+    font-size: 15px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: cornflowerblue;
+}
 
 /* search */
 #search-sx{
@@ -80,11 +110,23 @@ body{
 
 #search-sx input{
     width: 80%;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid black;
 }
 
 /* contatti */
 .contatti{
 display: flex;
+align-items: center;
+}
+
+.contatti img{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border: 1px solid black;
+    border-radius: 50%;
 }
 
 /* colonna destra */

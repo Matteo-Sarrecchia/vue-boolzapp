@@ -22,7 +22,8 @@
 
                     <div class="head-col-sx">
                         <!-- dati profilo -->
-                        <img src="" alt="">
+                        <img :src="user.avatar" alt="">
+                        <div>{{user.name}}</div>
                     </div>
 
                     <!-- link header -->
@@ -39,22 +40,38 @@
                     </div>
                 </div>
 
+                <!-- notifiche -->
                 <div id="notifiche">
-                    
+                    <a href="">
+                        <i class="fa-regular fa-bell-slash" style="color: #ffffff;"></i>
+                    </a>
+                    <div>
+                        <div>
+                            Ricevi notifiche di nuovi messaggi
+                        </div>
+                        <div>
+                            <a href="">Attiva notifiche desktop</a>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- search -->
                 <div id="search-sx">
                     <a href="">
                         <i class="fa-solid fa-magnifying-glass" style="color: #737373;"></i>
                     </a>
-                    <input type="text">
+                    <input type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
 
-                <div class="contatti">
-                    <img src="" alt="foto profilo">
-                    <div>.   nome profilo</div>
-                </div>
+                <!-- contatti -->
+                <div class="contatti" v-for="(img, index) in contacts">
+                    <img :src="contacts[index].avatar" alt="foto profilo">
+                    <div>
+                        <div>{{contacts[index].name}}</div>
+                    </div>
+                    
 
+                </div>
             </div>
 
             <!-- colonna destra -->
