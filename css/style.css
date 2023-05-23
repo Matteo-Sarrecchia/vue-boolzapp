@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: black; */
+}
+
+/* container */
+#container{
+    border: 1px solid black;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    height: calc(100vh - 40px);
+    display: flex;
+}
+
+/* colonne */
+.col-sx, .col-dx{
+    border: 1px solid red;
+}
+
+.col-sx{
+    width: 30%;
+}
+
+.col-dx{
+    width: 70%;
+}
+
+/* colonna sinistra */
+
+/* header */
+#head-sx, #notifiche, #search-sx, .contatti{
+    border: 1px solid blue;
+    height: 50px;
+}
+
+#head-sx{
+    display: flex;
+}
+
+.head-col-sx, .head-col-dx{
+    width: 50%;
+    height: 100%;
+    background-color: lightgrey;
+    border: 1px solid black;
+}
+
+#head-sx .head-col-dx{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#head-sx .head-col-dx a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* notifiche */
+
+/* search */
+#search-sx{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#search-sx a{
+    text-decoration: none;
+    font-size: 20px;
+    /* margin-left: 10px; */
+}
+
+#search-sx input{
+    width: 80%;
+}
+
+/* contatti */
+.contatti{
+display: flex;
+}
+
+/* colonna destra */
+
+/* header dx */
+#head-dx{
+    height: 50px;
+    border: 1px solid black;
+    background-color: lightgrey;
+    display: flex;
+}
+
+#head-dx .head-col-sx{
+    width: 70%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+#head-dx .head-col-dx{
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#head-dx .head-col-dx a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* main text */
+.main-text{
+    height: calc(100% - 100px);
+    border: 1px solid black;
+    background-color: blue;
+}
+
+.main-text .send, .main-text .receive{
+    min-height: 70px;
+}
+
+.main-text .send{
+    display: flex;
+    justify-content: end;
+}
+
+.main-text .send .text-send, .main-text .receive .text-receive{
+    width: 40%;
+    min-height: 50px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.main-text .send .text-send{
+    background-color: rgb(59, 194, 59);
+}
+
+.main-text .receive .text-receive{
+    background-color: lightskyblue;
+}
+
+/* footer */
+footer{
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    background-color: lightgrey;
+}
+
+.footer-col-sx, .footer-col-dx{
+    width: 10%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-col-cc{
+    width: 80%;
+    border: 1px solid black;
+}
+
+.footer-col-cc input{
+    width: 95%;
+    margin: 10px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 20px;
+}
