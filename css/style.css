@@ -164,10 +164,6 @@ align-items: center;
     margin: 0 10px;
 }
 
-#head-dx .head-col-sx div{
-
-}
-
 #head-dx .head-col-dx a{
     text-decoration: none;
     font-size: 20px;
@@ -194,13 +190,13 @@ align-items: center;
     border: 1px solid black;
     border-radius: 15px;
     padding: 10px;
-    min-height: 50px;
+    min-height: 55px;
 }
 
 .text-send{
     background-color: rgb(59, 194, 59);
-    margin-left: 300px;
     text-align: end;
+    margin-right: 20px;
 }
 
 .text-receive{

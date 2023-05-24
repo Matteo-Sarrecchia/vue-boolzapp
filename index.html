@@ -64,7 +64,7 @@
                 </div>
 
                 <!-- contatti -->
-                <div class="contatti" v-for="(elm, index) in contacts" @click="clickThumb">
+                <div class="contatti" v-for="(elm, index) in contacts" @click="changeContact(index)">
                     <img :src="contacts[index].avatar" alt="foto profilo">
                     <div>
                         {{contacts[index].name}}
@@ -115,14 +115,12 @@
 
                     <!-- colonna centro -->
                     <div class="footer-col-cc">
-                        <input type="text" name="" id="">
+                        <input type="text" name="" id="" v-model="newMessage" @keyup.enter="createNewMessage">
                     </div>
 
                     <!-- colonna destra -->
                     <div class="footer-col-dx">
-                        <a href="">
-                            <i class="fa-solid fa-microphone" style="color: #737373;"></i>
-                        </a>
+                            <i class="fa-solid fa-microphone" style="color: #737373;" @click="createNewMessage"></i>
                     </div>
                 </footer>
 

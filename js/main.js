@@ -5,7 +5,7 @@ createApp ({
         return {
             sendMessage: "",
             positionItem: 0,
-            status: "",
+            newMessage: "",
             
             user:  {
                     name: 'Matteo',
@@ -181,12 +181,25 @@ createApp ({
         }
     },
     methods: {
-        // createchat(){
-        //    console.log(this.contacts[this.positionItem].messages[this.positionItem].status) 
-        // },
-        clickThumb: function(index){
+        // funzione per spostarsi tra le chat
+        changeContact: function(index){
             this.positionItem = index;
-            console.log(this.contacts)
+        },
+
+        // funzione per creare un nuovo messaggio
+        createNewMessage(){
+            console.log(this.newMessage)
+            // this.contacts[this.positionItem].this.messages[this.positionItem].push = {
+            //     message: 'OK!!',
+            //     status: 'received'
+            // }
+            this.contacts[this.positionItem].messages.unshift(
+                {
+                    message: this.newMessage,
+                    status: 'sent'
+                }
+            );
+            this.newMessage = "";
         }
     }
 }).mount("#app")
