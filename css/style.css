@@ -5,27 +5,23 @@
 }
 
 body{
-    /* background-color: black; */
+    background: linear-gradient(50deg, #110e77 70%, #14c3e0 0%);
 }
 
 /* container */
 #container{
-    border: 1px solid black;
-    background-color: white;
     width: 80%;
     margin: auto;
     margin-top: 20px;
     height: calc(100vh - 40px);
     display: flex;
+    border: 1px solid white;
 }
 
 /* colonne */
-.col-sx, .col-dx{
-    border: 1px solid red;
-}
-
 .col-sx{
     width: 30%;
+    background-color: blue;
 }
 
 .col-dx{
@@ -33,15 +29,14 @@ body{
 }
 
 /* colonna sinistra */
-
 /* header */
 #head-sx, #notifiche, #search-sx, .contatti{
-    border: 1px solid blue;
-    height: 50px;
+    height: 60px;
 }
 
 #head-sx{
     display: flex;
+    border: 1px solid rgb(255, 255, 255);
 }
 
 #head-sx .head-col-sx{
@@ -51,8 +46,8 @@ body{
 
 .head-col-sx, .head-col-dx{
     width: 50%;
-    height: 50px;
-    background-color: lightgrey;
+    background-color: #05003c;
+    color: white;
 }
 
 #head-sx .head-col-dx{
@@ -64,7 +59,6 @@ body{
 #head-sx .head-col-sx img{
     width: 40px;
     height: 40px;
-    border: 1px solid black;
     border-radius: 50%;
     margin-left: 10px;
 }
@@ -81,7 +75,7 @@ body{
 
 /* notifiche */
 #notifiche{
-    background-color: #1dbfd9;
+    background-color: #17a0b5;
     display: flex;
     align-items: center;
 }
@@ -100,12 +94,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border: 1px solid white;
 }
 
 #search-sx a{
     text-decoration: none;
     font-size: 20px;
-    /* margin-left: 10px; */
 }
 
 #search-sx input{
@@ -119,6 +113,12 @@ body{
 .contatti{
 display: flex;
 align-items: center;
+color: white;
+border: 1px solid #0c0c56;
+}
+
+.contatti:hover{
+    background-color: rgb(38, 29, 94);
 }
 
 .contatti img{
@@ -133,16 +133,14 @@ align-items: center;
 
 /* header dx */
 #head-dx{
-    height: 50px;
-    border: 1px solid black;
-    background-color: lightgrey;
+    height: 60px;
+    border: 1px solid rgb(255, 255, 255);
     display: flex;
 }
 
 #head-dx .head-col-sx{
     width: 70%;
     height: 100%;
-    border: 1px solid black;
     display: flex;
     align-items: center;
 }
@@ -150,7 +148,6 @@ align-items: center;
 #head-dx .head-col-dx{
     width: 30%;
     height: 100%;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -172,10 +169,13 @@ align-items: center;
 
 /* main text */
 .main-text{
-    height: calc(100% - 100px);
+    height: calc(100% - 110px);
     border: 1px solid black;
-    background-color: blue;
+    background-image: url(../img/sfondo.jpg);
+    background-size: contain;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .text{
@@ -197,6 +197,7 @@ align-items: center;
     background-color: rgb(59, 194, 59);
     text-align: end;
     margin-right: 20px;
+    align-self: flex-end;
 }
 
 .text-receive{
@@ -206,14 +207,14 @@ align-items: center;
 /* footer */
 footer{
     height: 50px;
-    border: 1px solid black;
     display: flex;
     background-color: lightgrey;
+    background-color: #05003c;
 }
 
 .footer-col-sx, .footer-col-dx{
     width: 10%;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,7 +227,7 @@ footer a{
 
 .footer-col-cc{
     width: 80%;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
 }
 
 .footer-col-cc input{
@@ -236,4 +237,5 @@ footer a{
     border: none;
     border-radius: 10px;
     padding: 0 20px;
+    border: 1px solid rgb(255, 255, 255);
 }

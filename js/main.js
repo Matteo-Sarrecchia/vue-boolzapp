@@ -9,13 +9,13 @@ createApp ({
             
             user:  {
                     name: 'Matteo',
-                    avatar: 'img/icon.webp',
+                    avatar: 'img/avatar-1.png',
                 },            
 
             contacts: [
                 {
                     name: 'Michele',
-                    avatar: 'img/icon.webp',
+                    avatar: 'img/avatar-2.png',
                     visible: true,
                     messages: [
                         {
@@ -36,8 +36,8 @@ createApp ({
                     ],
                 },
                 {
-                    name: 'Fabio',
-                    avatar: 'img/icon.webp',
+                    name: 'Chiara',
+                    avatar: 'img/avatar-3.png',
                     visible: true,
                     messages: [
                         {
@@ -59,7 +59,7 @@ createApp ({
                 },
                 {
                     name: 'Samuele',
-                    avatar: 'img/icon.webp',
+                    avatar: 'img/avatar-4.png',
                     visible: true,
                     messages: [
                         {
@@ -81,7 +81,7 @@ createApp ({
                 },
                 {
                     name: 'Alessandro B.',
-                    avatar: 'img/icon.webp',
+                    avatar: 'img/avatar-5.png',
                     visible: true,
                     messages: [
                         {
@@ -97,8 +97,8 @@ createApp ({
                     ],
                 },
                 {
-                    name: 'Alessandro L.',
-                    avatar: 'img/icon.webp',
+                    name: 'Veronica',
+                    avatar: 'img/avatar-6.png',
                     visible: true,
                     messages: [
                         {
@@ -115,7 +115,7 @@ createApp ({
                 },
                 {
                     name: 'Claudia',
-                    avatar: 'img/icon.webp',
+                    avatar: 'img/avatar-7.png',
                     visible: true,
                     messages: [
                         {
@@ -137,7 +137,7 @@ createApp ({
                 },
                 {
                     name: 'Federico',
-                    avatar: 'img/icon.webp',
+                    avatar: 'img/avatar-8.png',
                     visible: true,
                     messages: [
                         {
@@ -154,7 +154,7 @@ createApp ({
                 },
                 {
                     name: 'Davide',
-                    avatar: 'img/icon.webp',
+                    avatar: 'img/avatar-9.png',
                     visible: true,
                     messages: [
                         {
