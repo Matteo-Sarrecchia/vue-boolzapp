@@ -188,18 +188,20 @@ createApp ({
 
         // funzione per creare un nuovo messaggio
         createNewMessage(){
-            console.log(this.newMessage)
-            // this.contacts[this.positionItem].this.messages[this.positionItem].push = {
-            //     message: 'OK!!',
-            //     status: 'received'
-            // }
-            this.contacts[this.positionItem].messages.unshift(
+            this.contacts[this.positionItem].messages.push(
                 {
                     message: this.newMessage,
                     status: 'sent'
                 }
             );
             this.newMessage = "";
+            setTimeout(() => {
+                this.contacts[this.positionItem].messages.push(
+                    {
+                        message: "ok..",
+                        status: 'received'
+                    })
+              }, "1000");    
         }
     }
 }).mount("#app")
