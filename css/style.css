@@ -20,12 +20,12 @@ body{
 
 /* colonne */
 .col-sx{
-    width: 30%;
+    width: 35%;
     background-color: blue;
 }
 
 .col-dx{
-    width: 70%;
+    width: 65%;
 }
 
 /* colonna sinistra */
@@ -111,15 +111,33 @@ body{
 
 /* contatti */
 .contatti{
-display: flex;
-align-items: center;
-color: white;
-border: 1px solid #0c0c56;
+    display: flex;
+    align-items: center;
+    color: white;
+    border: 1px solid #0c0c56;
+    position: relative;
+}
+
+.text-contatti{
+    display: flex;
+}
+
+.message-contatti{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.data-contatti{
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 .contatti:hover{
     background-color: rgb(38, 29, 94);
 }
+
 
 .contatti img{
     width: 40px;
@@ -202,6 +220,13 @@ border: 1px solid #0c0c56;
 
 .text-receive{
     background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+}
+.main-text-data{
+    font-size: 12px;
+    margin-top: 5px;
+    align-self: flex-end;
 }
 
 /* footer */
