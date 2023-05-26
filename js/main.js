@@ -199,7 +199,7 @@ createApp ({
         createNewMessage(){
             this.contacts[this.positionItem].messages.push(
                 {
-                    date: this.data.toLocaleString(undefined, this.options[1]),
+                    date: new Date(),
                     message: this.newMessage,
                     status: 'sent'
                 }
@@ -208,25 +208,17 @@ createApp ({
             setTimeout(() => {
                 this.contacts[this.positionItem].messages.push(
                     {
-                        date: this.data.toLocaleString(undefined, this.options[1]),
+                        date: new Date(),
                         message: "ok..",
                         status: 'received'
                     })
               }, "1000");
-              console.log(this.data.toLocaleString(undefined, this.options[1]));
         },
 
-        // funzione per cercare un contatto
-        searchContact(){
-            nameContact = [];
-            if(this.valueInputSearch === 0){
-                console.log("si")
-
-            } else console.log("no");
-            // console.log(this.valueInputSearch);
-            console.log(nameContact);
-            // console.log(this.contacts[this.positionItem].name);
-        }
+        // funzione elimina messaggio
+        deleteMessage(index){
+            this.contacts[this.positionItem].messages.splice(index,1)
+        },
     }
 }).mount("#app")
 

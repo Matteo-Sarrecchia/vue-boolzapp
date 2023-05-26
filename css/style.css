@@ -5,7 +5,8 @@
 }
 
 body{
-    background: linear-gradient(50deg, #110e77 70%, #14c3e0 0%);
+    background: linear-gradient(55deg, #08ff5f 70%, #087a8f 30%);
+    height: 100vh;
 }
 
 /* container */
@@ -95,6 +96,7 @@ body{
     align-items: center;
     justify-content: space-around;
     border: 1px solid white;
+    position: relative;
 }
 
 #search-sx a{
@@ -108,6 +110,7 @@ body{
     border-radius: 15px;
     border: 1px solid black;
 }
+
 
 /* contatti */
 .contatti{
@@ -208,13 +211,14 @@ body{
     border: 1px solid black;
     border-radius: 15px;
     padding: 10px;
-    min-height: 55px;
+    min-height: 60px;
 }
 
 .text-send{
     background-color: rgb(59, 194, 59);
-    text-align: end;
     margin-right: 20px;
+    display: flex;
+    flex-direction: column;
     align-self: flex-end;
 }
 
@@ -223,9 +227,23 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+.main-text-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-text button{
+    padding: 0;
+}
+
+.dropdown-item:hover{
+    background-color: #110e77;
+    color: white;
+}
+
 .main-text-data{
     font-size: 12px;
-    margin-top: 5px;
     align-self: flex-end;
 }
 
@@ -263,4 +281,33 @@ footer a{
     border-radius: 10px;
     padding: 0 20px;
     border: 1px solid rgb(255, 255, 255);
+}
+
+.autocomplete{
+    min-width: 200px;
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    z-index: 900;
+    display: none;
+}
+
+.li-name{
+    display: none;
+}
+
+.li-name:hover{
+    background-color: #14c3e0;
+}
+
+.block{
+    display: block;
+}
+
+.block-li{
+    display: block;
+    background-color: #0c0c56;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
 }
